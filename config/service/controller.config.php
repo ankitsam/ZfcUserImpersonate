@@ -19,12 +19,12 @@ return array(
 
             return $adminController;
         },
-        'zfcuser' => function($cm) {
+        'lmcuser' => function($cm) {
             /* @var ControllerManager $cm*/
             $serviceManager = $cm->getServiceLocator();
 
             /* @var RedirectCallback $redirectCallback */
-            $redirectCallback = $serviceManager->get('zfcuser_redirect_callback');
+            $redirectCallback = $serviceManager->get('lmcuser_redirect_callback');
 
             /* @var UserController $controller */
             $controller = new Controller\User($redirectCallback);

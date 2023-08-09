@@ -8,8 +8,8 @@
 
 namespace ZfcUserImpersonate;
 
-use Zend\Mvc\MvcEvent;
-use Zend\View\Model\ViewModel;
+use Laminas\Mvc\MvcEvent;
+use Laminas\View\Model\ViewModel;
 use ZfcUserImpersonate\Module\AbstractModule;
 
 class Module extends AbstractModule
@@ -27,7 +27,7 @@ class Module extends AbstractModule
             if (!$model instanceof ViewModel) {
                 return;
             }
-            $model->setTemplate(str_replace('zfc-user-impersonate', 'zfc-user', $model->getTemplate()));
+            $model->setTemplate(str_replace('zfc-user-impersonate', 'zfc-user', $model->getTemplate())); // TODO: check if this should be lmc-user instead
         }, -85);
     }
 }
