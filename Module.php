@@ -27,7 +27,7 @@ class Module extends AbstractModule
             if (!$model instanceof ViewModel) {
                 return;
             }
-            $model->setTemplate(str_replace('zfc-user-impersonate', 'zfc-user', $model->getTemplate())); // TODO: check if this should be lmc-user instead
+            $model->setTemplate(str_replace('zfc-user-impersonate', 'zfc-user', $model->getTemplate()));
         }, -85);
     }
 }

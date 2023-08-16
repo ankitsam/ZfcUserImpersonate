@@ -10,7 +10,7 @@ return array(
     'service_manager' => array(
         'allow_override' => true,
         'aliases' => array(
-            'zfcuser_user_service' => 'zfcuserimpersonate_user_service', // TODO: check if this should be lmcuser_user_service instead
+            'zfcuser_user_service' => 'zfcuserimpersonate_user_service',
         ),
     ),
 );
