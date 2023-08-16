@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "lm-commons/lmc-user": "^3.5",
+        "lm-commons/lmc-user": "^1.4.4",
         "laminas/laminas-authentication": "^2.5",
         "laminas/laminas-view": "^2.5",
         "laminas/laminas-mvc": "^2.5",
