@@ -11,14 +11,14 @@
 namespace ZfcUserImpersonate\View\Helper;
 
 use Laminas\View\Helper\AbstractHelper;
-use LmcUser\Service\User as LmcUserUserService;
+use ZfcUser\Service\User as ZfcUserUserService;
 
 class ZfcUserImpersonatorIdentity extends AbstractHelper
 {
     /**
      * The user service.
      *
-     * @var \LmcUser\Service\User
+     * @var \ZfcUser\Service\User
      */
     protected $userService;
 
@@ -26,7 +26,7 @@ class ZfcUserImpersonatorIdentity extends AbstractHelper
      * __invoke returns the identity of the 'real user' if impersonation is currently in progress, otherwise returning
      * false.
      *
-     * @return LmcUser\Model\UserInterface|boolean
+     * @return ZfcUser\Model\UserInterface|boolean
      */
     public function __invoke()
     {
@@ -40,7 +40,7 @@ class ZfcUserImpersonatorIdentity extends AbstractHelper
     /**
      * Get the user service.
      *
-     * @return LmcUser\Service\User
+     * @return ZfcUser\Service\User
      */
     public function getUserService()
     {
@@ -50,9 +50,9 @@ class ZfcUserImpersonatorIdentity extends AbstractHelper
     /**
      * Set the user service.
      *
-     * @param \LmcUser\Service\User $userService
+     * @param \ZfcUser\Service\User $userService
      */
-    public function setUserService(LmcUserUserService $userService)
+    public function setUserService(ZfcUserUserService $userService)
     {
         $this->userService = $userService;
 

@@ -49,7 +49,7 @@ class ModuleOptions extends AbstractOptions
      * Set the route parameter name which will contain the user id of the user to be impersonated.
      *
      * @param string $userIdRouteParameter
-     * @return \LmcUser\Options\ModuleOptions
+     * @return \ZfcUser\Options\ModuleOptions
      */
     public function setUserIdRouteParameter($userIdRouteParameter)
     {
@@ -73,7 +73,7 @@ class ModuleOptions extends AbstractOptions
      * Set the name of the route to which the user is redirected after starting an impersonation.
      *
      * @param string $impersonateRedirectRoute
-     * @return \LmcUser\Options\ModuleOptions
+     * @return \ZfcUser\Options\ModuleOptions
      */
     public function setImpersonateRedirectRoute($impersonateRedirectRoute)
     {
@@ -97,7 +97,7 @@ class ModuleOptions extends AbstractOptions
      * Set the name of the route to which the user is redirected after ending an impersonation.
      *
      * @param string $unimpersonateRedirectRoute
-     * @return \LmcUser\Options\ModuleOptions
+     * @return \ZfcUser\Options\ModuleOptions
      */
     public function setUnimpersonateRedirectRoute($unimpersonateRedirectRoute)
     {
@@ -121,7 +121,7 @@ class ModuleOptions extends AbstractOptions
      * Set the setting for storing user to the session as object (rather than ID)
      *
      * @param bool $storeAsObject
-     * @return \LmcUser\Options\ModuleOptions
+     * @return \ZfcUser\Options\ModuleOptions
      */
     public function setStoreUserAsObject($storeAsObject)
     {

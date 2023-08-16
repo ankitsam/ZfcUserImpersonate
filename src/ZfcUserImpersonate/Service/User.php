@@ -2,7 +2,7 @@
 /**
  * User Service
  *
- * Extends LmcUser's User Service, adding functions related to the impersonation of users.
+ * Extends ZfcUser's User Service, adding functions related to the impersonation of users.
  *
  * @created 20130709
  * @author Mark Tudor <code AT icefusion DOT co DOT uk>
@@ -11,15 +11,15 @@
 namespace ZfcUserImpersonate\Service;
 
 use Laminas\Authentication\Storage\StorageInterface;
-use LmcUser\Entity\UserInterface;
-use LmcUser\Options\ModuleOptions;
-use LmcUser\Service\User as LmcUserUserService;
-use LmcUserImpersonate\Exception\Domain as DomainException;
-use LmcUserImpersonate\Exception\NotImpersonating as NotImpersonatingException;
-use LmcUserImpersonate\Exception\UserNotFound as UserNotFoundException;
-use LmcUserImpersonate\Exception\UserNotLoggedIn as UserNotLoggedInException;
+use ZfcUser\Entity\UserInterface;
+use ZfcUser\Options\ModuleOptions;
+use ZfcUser\Service\User as ZfcUserUserService;
+use ZfcUserImpersonate\Exception\Domain as DomainException;
+use ZfcUserImpersonate\Exception\NotImpersonating as NotImpersonatingException;
+use ZfcUserImpersonate\Exception\UserNotFound as UserNotFoundException;
+use ZfcUserImpersonate\Exception\UserNotLoggedIn as UserNotLoggedInException;
 
-class User extends LmcUserUserService
+class User extends ZfcUserUserService
 {
     /**
      * The storage container in which the 'impersonator' (real user) is stored whilst they are impersonating another
@@ -142,7 +142,7 @@ class User extends LmcUserUserService
      * Session storage is used by default unless a different storage adapter has been set.
      *
      * @param  StorageInterface $storageForImpersonator
-     * @return \LmcUser\Service\User
+     * @return \ZfcUser\Service\User
      */
     public function setStorageForImpersonator(StorageInterface $storageForImpersonator)
     {

@@ -15,14 +15,14 @@ class Admin extends AbstractActionController
     /**
      * The options for this module.
      *
-     * @var \LmcUser\Options\ModuleOptions
+     * @var \ZfcUser\Options\ModuleOptions
      */
     protected $config;
 
     /**
      * The user service which provides the impersonation functions.
      *
-     * @var \LmcUser\Service\User
+     * @var \ZfcUser\Service\User
      */
     protected $userService;
 
@@ -67,7 +67,7 @@ class Admin extends AbstractActionController
     /**
      * Get the current module configuration.
      *
-     * @return \LmcUser\Options\ModuleOptions
+     * @return \ZfcUser\Options\ModuleOptions
      */
     public function getConfig()
     {
@@ -77,7 +77,7 @@ class Admin extends AbstractActionController
     /**
      * Set the module configuration.
      *
-     * @param \LmcUser\Options\ModuleOptions $config
+     * @param \ZfcUser\Options\ModuleOptions $config
      * @return \ZfcUserImpersonate\Controller\Admin
      */
     public function setConfig($config)
@@ -99,7 +99,7 @@ class Admin extends AbstractActionController
     /**
      * Set the user service.
      *
-     * @param \LmcUser\Service\User $userService
+     * @param \ZfcUser\Service\User $userService
      * @return \ZfcUserImpersonate\Controller\Admin
      */
     public function setUserService($userService)

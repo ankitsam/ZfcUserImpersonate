@@ -12,17 +12,17 @@
 namespace ZfcUserImpersonate\View\Helper;
 
 use Laminas\View\Helper\AbstractHelper;
-use LmcUser\Entity\UserInterface;
-use LmcUser\Service\User as UserService;
-use LmcUser\View\Helper\LmcUserDisplayName;
-use LmcUserImpersonate\Exception\Domain as DomainException;
+use ZfcUser\Entity\UserInterface;
+use ZfcUser\Service\User as UserService;
+use ZfcUser\View\Helper\ZfcUserDisplayName;
+use ZfcUserImpersonate\Exception\Domain as DomainException;
 
-class ZfcUserImpersonatorDisplayName extends LmcUserDisplayName
+class ZfcUserImpersonatorDisplayName extends ZfcUserDisplayName
 {
     /**
      * The user service.
      *
-     * @var \LmcUser\Service\User
+     * @var \ZfcUser\Service\User
      */
     protected $userService;
 
@@ -30,7 +30,7 @@ class ZfcUserImpersonatorDisplayName extends LmcUserDisplayName
      * __invoke returns a string containing the display name of the 'real user' if impersonation is currently in
      * progress, otherwise returns false.
      *
-     * The bulk of the work is delegated to the LmcUserDisplayName view helper.
+     * The bulk of the work is delegated to the ZfcUserDisplayName view helper.
      *
      * @return String
      */
@@ -53,14 +53,14 @@ class ZfcUserImpersonatorDisplayName extends LmcUserDisplayName
             return false;
         }
 
-        // The bulk of the work is delegated to the LmcUserDisplayName view helper.
+        // The bulk of the work is delegated to the ZfcUserDisplayName view helper.
         return parent::__invoke($realUser);
     }
 
     /**
      * Get the user service.
      *
-     * @return LmcUser\Service\User
+     * @return ZfcUser\Service\User
      */
     public function getUserService()
     {
@@ -70,7 +70,7 @@ class ZfcUserImpersonatorDisplayName extends LmcUserDisplayName
     /**
      * Set the user service.
      *
-     * @param \LmcUser\Service\User $userService
+     * @param \ZfcUser\Service\User $userService
      */
     public function setUserService(UserService $userService)
     {
