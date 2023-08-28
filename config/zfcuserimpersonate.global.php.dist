@@ -22,7 +22,7 @@ $settings = array(
      *
      * Accepted values: string
      */
-    //'impersonate_redirect_route'   => 'zfcuser',
+    //'impersonate_redirect_route'   => 'lmcuser',
 
     /**
      * Unimpersonate Redirect Route
@@ -31,7 +31,7 @@ $settings = array(
      *
      * Accepted values: string
      */
-    //'unimpersonate_redirect_route' => 'zfcuser',
+    //'unimpersonate_redirect_route' => 'lmcuser',
 
     /**
      * Store user to session as object (true) or id (false)

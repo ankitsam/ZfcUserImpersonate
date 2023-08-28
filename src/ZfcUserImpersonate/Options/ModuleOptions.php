@@ -18,14 +18,14 @@ class ModuleOptions extends AbstractOptions
      *
      * @var string
      */
-    protected $impersonateRedirectRoute = 'zfcuser';
+    protected $impersonateRedirectRoute = 'lmcuser';
 
     /**
      * The name of the route to which the user is redirected after ending an impersonation.
      *
      * @var string
      */
-    protected $unimpersonateRedirectRoute = 'zfcuser';
+    protected $unimpersonateRedirectRoute = 'lmcuser';
 
     /**
      * Store user to session as object (true) or id (false). Set to false if you want
