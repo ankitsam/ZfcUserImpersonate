@@ -1,5 +1,5 @@
 {
-    "name": "mtudor/zfc-user-impersonate",
+    "name": "ankitsam/zfc-user-impersonate",
     "description": "Facilitate impersonation of other users in LmcUser.",
     "type": "library",
     "keywords": [
