@@ -16,13 +16,13 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "lm-commons/lmc-user": "^3.1",
-        "laminas/laminas-authentication": "^2.5",
-        "laminas/laminas-view": "^2.5",
-        "laminas/laminas-mvc": "^3.2",
-        "laminas/laminas-stdlib": "^3.1",
-        "laminas/laminas-loader": "^2.5",
-        "laminas/laminas-modulemanager": "^2.5"
+        "lm-commons/lmc-user": "^3.6",
+        "laminas/laminas-authentication": "^2.15",
+        "laminas/laminas-view": "^2.27",
+        "laminas/laminas-mvc": "^3.6",
+        "laminas/laminas-stdlib": "^3.16.1",
+        "laminas/laminas-loader": "^2.9",
+        "laminas/laminas-modulemanager": "^2.14"
     },
     "autoload": {
         "psr-0": {
